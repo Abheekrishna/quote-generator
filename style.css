@@ -47,8 +47,8 @@ table {
 
 /* CSS starts */
 * {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
-    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-tap-highlight-color: transparent !important; 
+    -webkit-focus-ring-color: none !important; 
     outline: none !important;
 }
 body {
