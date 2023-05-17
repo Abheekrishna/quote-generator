@@ -100,7 +100,7 @@ header {
     font-weight: 600;
     border-radius: 15px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.18s ease-in-out;
     margin-left: 20px;
 }
 #getBtn:hover, #copyText:hover {
