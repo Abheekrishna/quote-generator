@@ -53,6 +53,9 @@ body {
 header {
     background-color: rgb(0, 166, 255);
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .logo {
     color: white;
@@ -99,6 +102,7 @@ header {
     box-shadow: 0 5px 20px rgb(0, 166, 255);
 }
 
+
 footer {
     position: fixed;
     left: 0;
@@ -118,4 +122,16 @@ footer {
     text-align: center;
     margin-top: 15px;
     font-size: .9rem;
+  }
+
+
+  /* Mobile */
+  @media only screen and (max-width: 600px) {
+    #quotePlaceHolder {
+        font-size: 1.2rem;
+        line-height: 28px;
+    }
+    #getBtn {
+        margin-bottom: 20px;
+    }
   }
