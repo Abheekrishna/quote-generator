@@ -104,7 +104,8 @@ header {
     margin-left: 20px;
 }
 #getBtn:hover, #copyText:hover {
-    box-shadow: 0 5px 20px rgb(0, 166, 255);
+    background-color: rgb(45, 182, 255);
+    box-shadow: 0 5px 20px rgb(197, 197, 197);
 }
 
 
