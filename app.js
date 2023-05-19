@@ -3,10 +3,21 @@ const URL = 'https://quote-garden.onrender.com/api/v3/quotes/random';
 const quoteDiv = document.getElementById('quotePlaceHolder')
 const authorDiv = document.getElementById('authorPlaceHolder')
 
+const loader = document.getElementById('loader');
+
+const loading = () => {
+    loader.classList.add('show')
+}
+const removeLoading = () => {
+    loader.classList.remove('show')
+}
+
 const getQuote = () => {
+    loading()
     fetch(URL)
     .then(response => response.json())
     .then(json => {
+        removeLoading()
         const quote = json.data[0].quoteText;
         const author = json.data[0].quoteAuthor
         quoteDiv.innerText = `"${quote}"`
@@ -49,4 +60,9 @@ const textCopy = () => {
 copyBtn.onclick = () => textCopy()
 btn.onclick = () => {
     copyText.innerText = ''
+}
+
+btn.onclick = () => {
+    quoteDiv.innerText = ''
+    authorDiv.innerText = ''
 }
